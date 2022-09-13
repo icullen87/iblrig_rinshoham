@@ -1,7 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Author: Niccolò Bonacchi
-# @Date:   2018-02-02 12:31:13
+# @Edits: Isabelle Cullen
+# @Date:   2022-09-13 
+
+
 import logging
 
 import iblrig.bonsai as bonsai
