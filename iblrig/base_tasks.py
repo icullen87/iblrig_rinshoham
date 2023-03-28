@@ -337,6 +337,10 @@ class BonsaiVisualStimulusMixin(object):
 
 
 class BpodMixin(object):
+    """ 
+    Mixins functions are use to combine both implementable PyBpod Code 
+    with hardware code
+    """
 
     def init_mixin_bpod(self, *args, **kwargs):
         self.bpod = Bpod()
@@ -412,6 +416,10 @@ class RotaryEncoderMixin:
 
 
 class ValveMixin:
+    """
+    Currently written for Behavior Port Valves, not Valve Module Drivers
+    """
+    
     def get_session_reward_amount(self: object) -> float:
         # simply returns the reward amount if no adaptive rewared is used
         if not self.task_params.ADAPTIVE_REWARD:
